@@ -12,6 +12,7 @@
         body {
             background: rgb(244, 168, 168);
             background-size: cover;
+            font-family: Arial, sans-serif;
         }
         
         .text-red {
@@ -23,10 +24,14 @@
         .navbar-brand, .nav-link, .footer p {
             color: red !important;
         }
+
+        .bg-custom {
+            background-color: rgb(244, 168, 168) !important;
+        }
     </style>
 </head>
-<body>
-    <header class="bg-white text-red text-center py-5">
+<body class="bg-custom">
+    <header class="bg-custom text-red text-center py-5 ms">
         <h1 class="display-4"><i class="bi bi-heart-fill icon-red"></i> Feliz Mesario, Rishell <i class="bi bi-heart-fill icon-red"></i></h1>
         <p class="lead">Te quiero mucho y quería hacerte algo especial.</p>
     </header>
@@ -46,11 +51,11 @@
             </div>
         </div>
     </nav>
-    <main class="container my-5 bg-white p-5 rounded shadow">
-        <section id="letters" class="letters mb-5">
+    <main class="container my-5  p-5 rounded shadow bg-white">
+        <section id="letters" class="letters mb-5 bg-custom" >
             <h2 class="text-center">Un pequeño mensaje <i class="bi bi-envelope-heart icon-red"></i></h2>
-            <div class="card mb-3">
-                <div class="card-body">
+            <div class="card mb-3 bg-custom">
+                <div class="card-body bg-white">
                     <h3 class="card-title"><i class="bi bi-envelope-heart icon-red"></i></h3>
                     <p class="card-text handwritten">Te quiero mucho, Rishell. Gracias por ser tú y por llenar mi vida de felicidad, incluso a la distancia.
 
@@ -60,35 +65,33 @@
                 </div>
             </div>
         </section>
-        <section id="medical-notes" class="medical-notes mb-5">
+        <section id="medical-notes" class="medical-notes mb-5 bg-custom">
             <h2 class="text-center">Nota Médica <i class="bi bi-file-medical icon-red"></i></h2>
-            <div class="card mb-3">
+            <div class="card mb-3 ">
                 <div class="card-body">
                     <h3 class="card-title"><i class="bi bi-file-medical-fill icon-red"></i> Nota Médica</h3>
-                    <p><strong>Paciente:</strong>Melisa Sh</p>
+                    <p><strong>Paciente:</strong> Rishell</p>
                     <p><strong>Diagnóstico:</strong> Enamorada crónica</p>
                     <p><strong>Tratamiento:</strong> 1000 dosis de amor al día</p>
                     <i class="bi bi-capsule icon-red"></i> <i class="bi bi-lungs icon-red"></i> <i class="bi bi-file-medical icon-red"></i>
                 </div>
             </div>
         </section>
-        <section id="quiz" class="quiz mb-5">
+        <section id="quiz" class="quiz mb-5 bg-custom">
             <h2 class="text-center">Quiz <i class="bi bi-question-circle icon-red"></i></h2>
             <div class="quiz-question mb-3">
                 <p>¿Qué es lo que digo cuando te digo algo y no me escuchas?</p>
                 <button class="btn btn-danger" onclick="checkAnswer(this, true)">No nada, olvidalo</button>
-             
                 <button class="btn btn-danger" onclick="checkAnswer(this, false)">No te voy a decir</button>
             </div>
             <br>
-            <div class="quiz-question mb-3">
+            <div class="quiz-question mb-3 ">
                 <p>¿Color favorito?</p>
                 <button class="btn btn-danger" onclick="checkAnswer(this, true)">Verde</button>
-             
                 <button class="btn btn-danger" onclick="checkAnswer(this, false)">Rojo</button>
             </div>
         </section>
-        <section id="treasure-hunt" class="treasure-hunt mb-5">
+        <section id="treasure-hunt" class="treasure-hunt mb-5 bg-custom">
             <h2 class="text-center">Búsqueda del Tesoro <i class="bi bi-gem icon-red"></i></h2>
             <p>Pista 1: Escribe la palabra secreta...</p>
             <input type="text" id="answer" class="form-control mb-3" placeholder="Escribe la palabra secreta aquí">
@@ -96,19 +99,18 @@
             <p id="message" class="mt-3"></p>
         </section>
     </main>
-    <footer class="bg-white text-red text-center py-3">
+    <footer class="bg-white text-red text-center py-3 ms">
         <p>Con amor, Melisa <i class="bi bi-heart icon-red"></i></p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
     <script>
         function checkTreasureHunt() {
             const answer = document.getElementById('answer').value.toLowerCase();
             const message = document.getElementById('message');
             
-            if (answer === 'amor') { // Reemplaza 'amor' con la respuesta correcta
+            if (answer === 'amor') {
                 message.textContent = '¡Felicidades! Has encontrado el tesoro. Gracias por hacerme feliz, te quiero mucho cielo';
                 message.style.color = 'green';
             } else {
@@ -119,4 +121,3 @@
     </script>
 </body>
 </html>
-

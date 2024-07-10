@@ -1,10 +1,5 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-}
-
 .header {
-    background-color: #ffcccb;
+    background: rgb(244, 168, 168);
     padding: 20px;
 }
 
@@ -13,7 +8,15 @@ body {
     font-size: 1.2em;
 }
 
-.letters, .medical-notes, .quiz, .treasure-hunt {
+.ms {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+}
+
+.letters,
+.medical-notes,
+.quiz,
+.treasure-hunt {
     margin: 20px 0;
     padding: 20px;
     background-color: #fff;
@@ -29,6 +32,13 @@ body {
     font-family: 'Dancing Script', cursive;
     font-size: 1.5em;
 }
+
+.brand {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+}
+
+
 
 footer {
     background-color: #ffcccb;
