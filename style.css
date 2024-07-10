@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.header {
+    background-color: #ffcccb;
+    padding: 20px;
+}
+
+.handwritten {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2em;
+}
+
+.letters, .medical-notes, .quiz, .treasure-hunt {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.medical-notes .note {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar-brand {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+}
+
+footer {
+    background-color: #ffcccb;
+    padding: 10px;
+}

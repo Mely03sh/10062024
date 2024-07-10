@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un Mes de Novios</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: rgb(244, 168, 168);
+            background-size: cover;
+        }
+        
+        .text-red {
+            color: red;
+        }
+        .icon-red {
+            color: red;
+        }
+        .navbar-brand, .nav-link, .footer p {
+            color: red !important;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-white text-red text-center py-5">
+        <h1 class="display-4"><i class="bi bi-heart-fill icon-red"></i> Feliz Mesario, Rishell <i class="bi bi-heart-fill icon-red"></i></h1>
+        <p class="lead">Te quiero mucho y quería hacerte algo especial.</p>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">Nuestro Mesario</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#letters">Mensaje <i class="bi bi-envelope-heart icon-red"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#medical-notes">Nota Médica<i class="bi bi-file-medical icon-red"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quiz">Quiz<i class="bi bi-question-circle icon-red"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#treasure-hunt">Búsqueda del Tesoro<i class="bi bi-gem icon-red"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container my-5 bg-white p-5 rounded shadow">
+        <section id="letters" class="letters mb-5">
+            <h2 class="text-center">Un pequeño mensaje <i class="bi bi-envelope-heart icon-red"></i></h2>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h3 class="card-title"><i class="bi bi-envelope-heart icon-red"></i></h3>
+                    <p class="card-text handwritten">Te quiero mucho, Rishell. Gracias por ser tú y por llenar mi vida de felicidad, incluso a la distancia.
+
+                        Con todo mi amor,
+                        
+                        Melisa</p>
+                </div>
+            </div>
+        </section>
+        <section id="medical-notes" class="medical-notes mb-5">
+            <h2 class="text-center">Nota Médica <i class="bi bi-file-medical icon-red"></i></h2>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h3 class="card-title"><i class="bi bi-file-medical-fill icon-red"></i> Nota Médica</h3>
+                    <p><strong>Paciente:</strong>Melisa Sh</p>
+                    <p><strong>Diagnóstico:</strong> Enamorada crónica</p>
+                    <p><strong>Tratamiento:</strong> 1000 dosis de amor al día</p>
+                    <i class="bi bi-capsule icon-red"></i> <i class="bi bi-lungs icon-red"></i> <i class="bi bi-file-medical icon-red"></i>
+                </div>
+            </div>
+        </section>
+        <section id="quiz" class="quiz mb-5">
+            <h2 class="text-center">Quiz <i class="bi bi-question-circle icon-red"></i></h2>
+            <div class="quiz-question mb-3">
+                <p>¿Qué es lo que digo cuando te digo algo y no me escuchas?</p>
+                <button class="btn btn-danger" onclick="checkAnswer(this, true)">No nada, olvidalo</button>
+             
+                <button class="btn btn-danger" onclick="checkAnswer(this, false)">No te voy a decir</button>
+            </div>
+            <br>
+            <div class="quiz-question mb-3">
+                <p>¿Color favorito?</p>
+                <button class="btn btn-danger" onclick="checkAnswer(this, true)">Verde</button>
+             
+                <button class="btn btn-danger" onclick="checkAnswer(this, false)">Rojo</button>
+            </div>
+        </section>
+        <section id="treasure-hunt" class="treasure-hunt mb-5">
+            <h2 class="text-center">Búsqueda del Tesoro <i class="bi bi-gem icon-red"></i></h2>
+            <p>Pista 1: Escribe la palabra secreta...</p>
+            <input type="text" id="answer" class="form-control mb-3" placeholder="Escribe la palabra secreta aquí">
+            <button class="btn btn-danger" onclick="checkTreasureHunt()">Comprobar</button>
+            <p id="message" class="mt-3"></p>
+        </section>
+    </main>
+    <footer class="bg-white text-red text-center py-3">
+        <p>Con amor, Melisa <i class="bi bi-heart icon-red"></i></p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        function checkTreasureHunt() {
+            const answer = document.getElementById('answer').value.toLowerCase();
+            const message = document.getElementById('message');
+            
+            if (answer === 'amor') { // Reemplaza 'amor' con la respuesta correcta
+                message.textContent = '¡Felicidades! Has encontrado el tesoro. Gracias por hacerme feliz, te quiero mucho cielo';
+                message.style.color = 'green';
+            } else {
+                message.textContent = 'Intenta de nuevo.';
+                message.style.color = 'red';
+            }
+        }
+    </script>
+</body>
+</html>
+
