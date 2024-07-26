@@ -3,121 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Un Mes Mi Cielo</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <title>Página Romántica</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            background: rgb(244, 168, 168);
-            background-size: cover;
-            font-family: Arial, sans-serif;
-        }
-        
-        .text-red {
-            color: red;
-        }
-        .icon-red {
-            color: red;
-        }
-        .navbar-brand, .nav-link, .footer p {
-            color: red !important;
-        }
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"> <!-- Fuente romántica -->
 
-        .bg-custom {
-            background-color: rgb(244, 168, 168) !important;
-        }
-    </style>
 </head>
-<body class="bg-custom">
-    <header class="bg-custom text-red text-center py-5 ma">
-        <h1 class="display-4"><i class="bi bi-heart-fill icon-red"></i> Feliz Mesario, Rishell <i class="bi bi-heart-fill icon-red"></i></h1>
-        <p class="lead">Te quiero mucho y quería hacerte algo especial.</p>
+<body>
+    <header>
+        <h1><i class="fas fa-heart"></i> Para la mujer que más adoro <i class="fas fa-heart"></i></h1>
     </header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container">
-            <a class="navbar-brand" href="#">Nuestro Mesario</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link" href="#letters">Mensaje <i class="bi bi-envelope-heart icon-red"></i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#medical-notes">Nota Médica<i class="bi bi-file-medical icon-red"></i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#quiz">Quiz<i class="bi bi-question-circle icon-red"></i></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#treasure-hunt">Búsqueda del Tesoro<i class="bi bi-gem icon-red"></i></a></li>
-                </ul>
+    <section class="intro">
+        <h2>Mi Amor</h2>
+        <p>Nunca has sido, ni eres ni serás una opción. Siempre serás para mí una prioridad.
+            Gracias por aparecer en mi vida y hacerla cada segundo que pasa más feliz, Mi felicidad tiene un solo nombre desde que te conocí y me basta con ver tus bellos ojos para que mis días se alegren
+            Desde que tú llegaste a mi vida le diste color gracias por ser como eres tan única diferente y maravillosa
+        </p>
+    </section>
+    <section class="gallery">
+        <h2>Momentos<i class="fas fa-camera-retro"></i></h2>
+        <div class="carousel">
+            <div><img src="1.jpg" alt="Momento 1"></div>
+            <div><img src="2.jpg" alt="Momento 2"></div>
+            <div><img src="3.jpg" alt="Momento 3"></div>
+            <div><img src="4.jpg" alt="Momento 4"></div>
+            <div><img src="5.jpg" alt="Momento 5"></div>
+            <div><img src="6.jpg" alt="Momento 6"></div>
+            <div><img src="7.jpg" alt="Momento 7"></div>
+            <div><img src="8.jpg" alt="Momento 8"></div>
+            <div><img src="9.jpg" alt="Momento 9"></div>
+            <div><img src="10.jpg" alt="Momento 10"></div>
+        </div>
+    </section>
+    <section class="videos">
+        <h2>Videos<i class="fas fa-film"></i></h2>
+        <div class="carousel">
+            <div>
+                <video controls>
+                    <source src="v1.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+            </div>
+            <div>
+                <video controls>
+                    <source src="v2.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+            </div>
+            <div>
+                <video controls>
+                    <source src="v3.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
             </div>
         </div>
-    </nav>
-    <main class="container my-5  p-5 rounded shadow bg-white">
-        <section id="letters" class="letters mb-5 bg-custom" >
-            <h2 class="text-center">Un pequeño mensaje <i class="bi bi-envelope-heart icon-red"></i></h2>
-            <div class="card mb-3 bg-custom">
-                <div class="card-body bg-white">
-                    <h3 class="card-title"><i class="bi bi-envelope-heart icon-red"></i></h3>
-                    <p class="card-text handwritten">Te quiero mucho, Rishell. Gracias por ser tú y por llenar mi vida de felicidad, incluso a la distancia.
-
-                        Con todo mi amor,
-                        
-                        Melisa</p>
-                </div>
-            </div>
-        </section>
-        <section id="medical-notes" class="medical-notes mb-5 bg-custom">
-            <h2 class="text-center">Nota Médica <i class="bi bi-file-medical icon-red"></i></h2>
-            <div class="card mb-3 ">
-                <div class="card-body">
-                    <h3 class="card-title"><i class="bi bi-file-medical-fill icon-red"></i> Nota Médica</h3>
-                    <p><strong>Paciente:</strong> Rishell</p>
-                    <p><strong>Diagnóstico:</strong> Enamorada crónica</p>
-                    <p><strong>Tratamiento:</strong> 1000 dosis de amor al día</p>
-                    <i class="bi bi-capsule icon-red"></i> <i class="bi bi-lungs icon-red"></i> <i class="bi bi-file-medical icon-red"></i>
-                </div>
-            </div>
-        </section>
-        <section id="quiz" class="quiz mb-5 bg-custom">
-            <h2 class="text-center">Quiz <i class="bi bi-question-circle icon-red"></i></h2>
-            <div class="quiz-question mb-3">
-                <p>¿Qué es lo que digo cuando te digo algo y no me escuchas?</p>
-                <button class="btn btn-danger" onclick="checkAnswer(this, true)">No nada, olvidalo</button>
-                <button class="btn btn-danger" onclick="checkAnswer(this, false)">No te voy a decir</button>
-            </div>
-            <br>
-            <div class="quiz-question mb-3 ">
-                <p>¿Color favorito?</p>
-                <button class="btn btn-danger" onclick="checkAnswer(this, true)">Verde</button>
-                <button class="btn btn-danger" onclick="checkAnswer(this, false)">Rojo</button>
-            </div>
-        </section>
-        <section id="treasure-hunt" class="treasure-hunt mb-5 bg-custom">
-            <h2 class="text-center">Búsqueda del Tesoro <i class="bi bi-gem icon-red"></i></h2>
-            <p>Pista 1: Escribe la palabra secreta...</p>
-            <input type="text" id="answer" class="form-control mb-3" placeholder="Escribe la palabra secreta aquí">
-            <button class="btn btn-danger" onclick="checkTreasureHunt()">Comprobar</button>
-            <p id="message" class="mt-3"></p>
-        </section>
-    </main>
-    <footer class="bg-white text-red text-center py-3 ma">
-        <p>Con amor, Melisa <i class="bi bi-heart icon-red"></i></p>
+    </section>
+    <section class="messages">
+        <h2>Carta<i class="fas fa-envelope"></i></h2>
+        <p>Te quiero con todas tus virtudes y defectos aunque para mí eres tan perfecta como eres tienes eso que me atrapa y no se ni como explicarte te quiero cada día más mi solecito bello
+            Cuando quiero algo voy con todo a por ello. Y eso es lo que me ocurrió contigo y por eso sigo acá por qué no importa la adversidades quiero demostrarte que soy leal a ti y que estaré tanto en días buenos y feliz y también en días malos y oscuros para ti
+            Que no importa la distancia te voy a demostrar que no hay límites cuando se quiere y que sin duda alguna el a verte conocido ha Sido lo mejor de mi vida
+            Eres el amor de todas mis mañanas, de todas mis noches y mis tardes. Te quiero mucho mi vida
+            Te quiero por como eres
+Te quiero por ser única
+Te quiero por me encantas
+Te quiero por qué eres mía
+Te quiero por qué me haces ser mejor persona 
+Te quiero por qué amo tus ojos
+Te quiero por qué no hay algo en ti que no me enamore cada día
+Gracias por todo y como te dije permanecere aquí por qué lo que siento por ti es sincero y único
+Y cuanto más sé de ti, más quiero estar contigo quiero ayudarte a superar tus miedos y estar en el proceso para que estés feliz y tu vida esté tranquila y en paz, Me encanta tal cual eres no cambiaría nada de ti para mí eres la mejor valoro cada parte cada palabra que viene de ti gracias por darme tu tiempo aun cuando no lo tienes pero buscas el momento para estar conmigo
+espero que sigamos juntas por mucho más y eres lo mejor mi chiquita preciosa felices 3 meses desde que entraste en mi vida y me haz hecho sentir especial y feliz
+        
+<hr>
+        
+        ❤️ TE QUIERO POR QUE ME GUSTAS MUCHO ❤️<br><hr>
+        ❤️ TE QUIERO POR QUE ME ENCANTAS ❤️<br><hr>
+        ❤️ TE QUIERO POR QUE ME HACES FELIZ ❤️<br><hr>
+        ❤️ TE QUIERO POR QUE ME FASCINAS ❤️<br><hr>
+        ❤️ TE QUIERO POR QUE ME IMPORTAS ❤️<br><hr>
+        ❤️ TE QUIERO POR QUE ME COMPLEMENTAS ❤️<br><hr>
+        ❤️ TE QUIERO POR QUE ERES ÚNICA ❤️<br><hr>
+        ❤️ TE QUIERO POR QUE ERES HUMILDE, FUERTE, SENCILLA ❤️<br><hr>
+        ❤️ TE QUIERO POR QUE AMO TU VOZ ❤️<br><hr>
+        ❤️ TE QUIERO POR QUE ME ENCANTAN TUS OJOS ❤️<br><hr>
+        ❤️ TE QUIERO POR QUE ME INSPIRAS A HACERME MEJOR ❤️<br><hr>
+        ❤️ TE QUIERO POR QUE ME DAS PAZ ❤️<br><hr>
+        ❤️ TE QUIERO POR QUE ERES MI SOLECITO ❤️<br><hr>
+        ❤️ TE QUIERO POR QUE TE LO MERECES ❤️<br><hr>
+        ❤️ TE QUIERO POR QUE ERES UNA EXTRAORDINARIA PERSONA ❤️<br><hr>
+        ❤️ TE QUIERO POR QUE ERES AUTÉNTICA ❤️<br><hr>
+        ❤️ TE QUIERO POR QUE ERES LA MEJOR NOVIA ❤️<br><hr>
+        ❤️ TE QUIERO MUCHO Y CADA DÍA UN POCO MÁS ❤️<hr>
+    </p>
+    </section>
+    <footer>
+        <p>&copy; 2024 EVELIN MENDOZA | <i class="fas fa-heart"></i> TE QUIERO <i class="fas fa-heart"></i></p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
-        function checkTreasureHunt() {
-            const answer = document.getElementById('answer').value.toLowerCase();
-            const message = document.getElementById('message');
-            
-            if (answer === 'amor') {
-                message.textContent = '¡Felicidades! Has encontrado el tesoro. Gracias por hacerme feliz, te quiero mucho cielo';
-                message.style.color = 'green';
-            } else {
-                message.textContent = 'Intenta de nuevo.';
-                message.style.color = 'red';
-            }
-        }
+        $(document).ready(function(){
+            $('.carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: true,
+                prevArrow: '<button class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+                nextArrow: '<button class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+                customPaging: function(slider, i) {
+
+                    return '<i class="fas fa-heart"></i>';
+                }
+            });
+        });
     </script>
+    
 </body>
 </html>
+
